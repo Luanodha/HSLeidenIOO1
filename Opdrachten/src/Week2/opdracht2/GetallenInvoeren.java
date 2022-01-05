@@ -8,11 +8,16 @@ public class GetallenInvoeren {
 
     public static void main(String[] args) {
 
-        int[] bla = (pakAlleEvenGetallen(voerInGetallen(5)));
-        for (int i = 0; i <bla.length ; i++) {
-            System.out.println(bla[i]);
+        System.out.print("Hoeveel hele getallen wil je invoeren? ");
+        int[] arrayInvoer = voerInGetallen(scanner.nextInt());
+        toonGetallen(arrayInvoer);
 
-        }
+        System.out.println("Het maximum is: "+(bepaalMaximum(arrayInvoer)));
+        System.out.println("Het minumum is: "+(bepaalMinimum(arrayInvoer)));
+
+        System.out.println("Alle even getallen zijn: ");
+        toonGetallen(pakAlleEvenGetallen(arrayInvoer));
+
 
     }
 
@@ -52,18 +57,22 @@ public class GetallenInvoeren {
                 lengteArrayEvenGetallen++;
             }
         }
-        System.out.println("lengte arraygetallen "+lengteArrayEvenGetallen); // for debugging
-
         int[] evenGetallen = new int[lengteArrayEvenGetallen];
+        int teller = 0;
         for (int i = 0; i < eenArray.length ; i++) {
-            int teller = 0;
             if (eenArray[i] % 2 == 0) {
                 evenGetallen[teller] = eenArray[i];
-                teller = teller + 1;
+                teller++;
             }
         }
         return evenGetallen;
 
+    }
+
+    public static void toonGetallen(int[] eenArray){
+        for (int i = 0; i < eenArray.length; i++) {
+            System.out.printf("Getal %d: %d\n", i+1,eenArray[i]);
+        }
     }
 
 }
