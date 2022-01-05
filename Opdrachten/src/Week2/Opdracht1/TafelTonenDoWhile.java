@@ -1,8 +1,8 @@
-package Week2;
+package Week2.Opdracht1;
 
 import java.util.Scanner;
 
-public class TafelTonenWhile {
+public class TafelTonenDoWhile {
 
     public static void main(String[] args) {
 
@@ -21,11 +21,11 @@ public class TafelTonenWhile {
             }
         }
 
-        // de 'while' zoals opdracht
+        // de 'DoWhile' zoals opdracht
         int i = 1;
-        while (i < 11 ){
+        do {
             System.out.printf("%d X %d = %d\n",i,tafelGetal,i*tafelGetal );
             i++;
-        }
+        } while (i <11);
     }
 }
