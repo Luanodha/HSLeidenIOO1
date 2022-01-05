@@ -1,3 +1,6 @@
+.idea/
+exclude_van_git
+
 # Compiled class file
 *.class
 
