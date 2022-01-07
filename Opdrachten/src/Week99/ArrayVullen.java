@@ -16,7 +16,7 @@ public class ArrayVullen {
 
     public int[] veranderArray(int[] array) {
         array[1] = 6;
-        array[4] = array[4] + 2;
+        array[3] = array[3] + 2;
         return array;
     }
 }
