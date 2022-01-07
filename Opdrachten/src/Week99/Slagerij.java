@@ -19,7 +19,7 @@ public class Slagerij {
             }
         }
         if (!welInAssortiment) {
-            System.out.println("de vleessoort komt NIET voor in het assortiment.");
+            System.out.println("De vleessoort komt NIET voor in het assortiment.");
         }
     }
 }

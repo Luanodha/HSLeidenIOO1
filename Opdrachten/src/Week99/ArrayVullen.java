@@ -4,7 +4,7 @@ import java.sql.Array;
 
 public class ArrayVullen {
 
-    public int[] maakArray(){
+    public int[] maakArray() {
         int[] array = new int[5];
         array[0] = 5;
         array[1] = 12;
@@ -14,7 +14,7 @@ public class ArrayVullen {
         return array;
     }
 
-    public int[] veranderArray(int[] array){
+    public int[] veranderArray(int[] array) {
         array[1] = 6;
         array[4] = array[4] + 2;
         return array;

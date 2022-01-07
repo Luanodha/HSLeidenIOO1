@@ -36,7 +36,7 @@ public class GarageMedewerker {
         this.geboortejaar = geboortejaar;
     }
 
-    public int getLeeftijd(int geboortejaar){
+    public int getLeeftijd(int geboortejaar) {
         return (2021 - geboortejaar);
     }
 }
