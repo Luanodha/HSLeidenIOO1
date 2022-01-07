@@ -1,9 +1,10 @@
 package Week99;
 
 public class SportSchoenen extends SportArtikel {
-
-    public SportSchoenen(double prijs, boolean inStock) {
+    private String type;
+    public SportSchoenen(double prijs, boolean inStock, String type) {
         super(prijs, inStock);
+        this.type = type;
     }
 
     public String getType() {
